@@ -1,0 +1,17 @@
+* text=auto
+
+# CAD and print files are binary — don't try to diff or normalize them
+*.step binary
+*.stp binary
+*.stl binary
+*.3mf binary
+*.f3d binary
+*.f3z binary
+*.ipt binary
+*.iam binary
+*.sldprt binary
+*.sldasm binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary

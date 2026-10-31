@@ -1,0 +1,45 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+\#auto_saved_files#
+_autosave-*
+*.bak
+*.bck
+*-save.pro
+*-save.kicad_pcb
+# Fab output is regenerated from source; keep zips you actually sent to the fab in hardware/pcb/*/releases/
+hardware/pcb/*/gerbers/
+hardware/pcb/*/production/
+
+# Firmware build output (PlatformIO / ESP-IDF / Arduino)
+.pio/
+build/
+sdkconfig.old
+managed_components/
+*.elf
+*.map
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# CAD / slicer temp
+~$*
+*.tmp
+*.gcode
+*.bgcode
+
+# Secrets
+.env
+secrets.h
