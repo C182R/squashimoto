@@ -34,9 +34,13 @@ __pycache__/
 *.pyc
 .venv/
 
-# CAD / slicer temp
+# SolidWorks lock/temp files and auto-recover backups
 ~$*
 *.tmp
+swxauto*/
+*.SWBAK
+
+# Slicer output (keep the .3mf projects, skip sliced files)
 *.gcode
 *.bgcode
 

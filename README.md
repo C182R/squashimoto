@@ -11,7 +11,7 @@ Built with support from Hack Club Fabricate, and as a Hack Club Fallen build (de
 | `bom/` | Bill of materials (`squashimoto-bom.csv`) |
 | `hardware/pcb/controller/` | Main controller board — KiCad (ESP32-WROOM-32E, ICM-42688-P IMU, TPS54360B buck from 36 V) |
 | `hardware/pcb/encoder/` | AS5600 steering encoder board — KiCad |
-| `cad/` | Mechanical CAD source; `cad/exports/` for STEP / STL / 3MF |
+| `cad/` | SolidWorks parts and assemblies, plus Bambu Studio `.3mf` print projects; `cad/exports/` for STEP / STL |
 | `firmware/controller/` | Balance loop and high-level control for the controller board |
 | `firmware/hoverboard/` | Notes and config for the reflashed hoverboard boards |
 | `docs/journal/` | Build journal |

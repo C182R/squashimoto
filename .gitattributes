@@ -1,16 +1,21 @@
 * text=auto
 
-# CAD and print files are binary — don't try to diff or normalize them
-*.step binary
-*.stp binary
-*.stl binary
-*.3mf binary
-*.f3d binary
-*.f3z binary
-*.ipt binary
-*.iam binary
+# CAD and print files are binary - no diffs, no line-ending changes.
+# SolidWorks saves uppercase extensions on Windows, so both cases are listed.
+*.SLDPRT binary
 *.sldprt binary
+*.SLDASM binary
 *.sldasm binary
+*.SLDDRW binary
+*.slddrw binary
+*.STEP binary
+*.step binary
+*.STP binary
+*.stp binary
+*.STL binary
+*.stl binary
+*.3MF binary
+*.3mf binary
 *.pdf binary
 *.png binary
 *.jpg binary
