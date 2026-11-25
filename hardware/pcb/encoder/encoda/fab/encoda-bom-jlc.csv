@@ -1,0 +1,6 @@
+"Designator","Qty","Comment","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet","LCSC Part #"
+"C1","1","100nF","","","","squashimoto:C_0603_1608Metric","","C91183"
+"C2","1","1uF","","","","squashimoto:C_0603_1608Metric","","C5673"
+"J1","1","GH-5, to controller J11","","","","squashimoto:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal","","C189896"
+"R1","1","100","","","","squashimoto:R_0603_1608Metric","","C22775"
+"U1","1","AS5600","","","","squashimoto:SOIC-8_3.9x4.9mm_P1.27mm","","C55240803"

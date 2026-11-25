@@ -1,0 +1,6 @@
+"Item","Qty","Designator","Value","Package","Manufacturer","Manufacturer Part Number","LCSC Part #"
+"1","1","C1","100nF","squashimoto:C_0603_1608Metric","YAGEO","CC0603JRX7R9BB104","C91183"
+"2","1","C2","1uF","squashimoto:C_0603_1608Metric","Samsung Electro-Mechanics","CL10A105KA8NNNC","C5673"
+"3","1","J1","GH-5, to controller J11","squashimoto:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal","JST","SM05B-GHS-TB(LF)(SN)","C189896"
+"4","1","R1","100","squashimoto:R_0603_1608Metric","UNI-ROYAL","0603WAF1000T5E","C22775"
+"5","1","U1","AS5600","squashimoto:SOIC-8_3.9x4.9mm_P1.27mm","Infineon","AS5600-ASOT-SOIC8","C55240803"

@@ -1,0 +1,18 @@
+(version 1)
+# squashimoto custom rules. later rules win, so HV goes last.
+
+(rule "via to track"
+  (constraint clearance (min 0.25mm))
+  (condition "A.Type == 'Via' && B.Type == 'Track'"))
+
+(rule "plated through-hole to track"
+  (constraint clearance (min 0.33mm))
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && B.Type == 'Track'"))
+
+(rule "plated through-hole annular ring"
+  (constraint annular_width (min 0.25mm))
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+(rule "HV clearance"
+  (constraint clearance (min 0.6mm))
+  (condition "A.NetClass == 'HV'"))

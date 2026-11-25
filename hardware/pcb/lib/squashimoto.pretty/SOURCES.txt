@@ -1,0 +1,44 @@
+Footprint sources (KiCad 10.0.1 stock library unless marked custom)
+AMASS_XT30PW-M_1x02_P2.50mm_Horizontal                                 Connector_AMASS.pretty (modified, see tools/build_fplib.py)
+Buzzer_Huaneng_MLT-8530                                                custom, tools/build_fplib.py
+CP_Radial_D6.3mm_P2.50mm                                               Capacitor_THT.pretty
+CP_Radial_D8.0mm_P3.50mm                                               Capacitor_THT.pretty
+C_0603_1608Metric                                                      Capacitor_SMD.pretty
+C_0805_2012Metric                                                      Capacitor_SMD.pretty
+C_1206_3216Metric                                                      Capacitor_SMD.pretty
+D_SMA                                                                  Diode_SMD.pretty
+D_SMC                                                                  Diode_SMD.pretty
+D_SOD-123                                                              Diode_SMD.pretty
+ESP32-WROOM-32E                                                        RF_Module.pretty (modified, see tools/build_fplib.py)
+Fuseholder_Littelfuse_Nano2_154x                                       Fuse.pretty
+HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm                              Package_SO.pretty
+JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal                        Connector_JST.pretty
+JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal                       Connector_JST.pretty
+JST_VH_B2P-VH_1x02_P3.96mm_Vertical                                    Connector_JST.pretty
+JST_VH_B3P-VH_1x03_P3.96mm_Vertical                                    Connector_JST.pretty
+JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical                                  Connector_JST.pretty
+JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical                                  Connector_JST.pretty
+JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical                                  Connector_JST.pretty
+LED_0603_1608Metric                                                    LED_SMD.pretty
+LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm                                     LED_SMD.pretty
+LGA-14_3x2.5mm_P0.5mm_ICM-42688-P                                      custom, tools/build_fplib.py
+L_0603_1608Metric                                                      Inductor_SMD.pretty
+L_Coilcraft_XAL1010-XXX                                                Inductor_SMD.pretty (modified, see tools/build_fplib.py)
+MountingHole_3.2mm_M3                                                  MountingHole.pretty
+PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal                 Connector_Phoenix_MC.pretty
+PinHeader_1x03_P2.54mm_Vertical                                        Connector_PinHeader_2.54mm.pretty
+R_0603_1608Metric                                                      Resistor_SMD.pretty
+R_0805_2012Metric                                                      Resistor_SMD.pretty
+R_1206_3216Metric                                                      Resistor_SMD.pretty
+SOIC-16_3.9x9.9mm_P1.27mm                                              Package_SO.pretty
+SOIC-8_3.9x4.9mm_P1.27mm                                               Package_SO.pretty
+SOT-223-3_TabPin2                                                      Package_TO_SOT_SMD.pretty
+SOT-23                                                                 Package_TO_SOT_SMD.pretty
+SOT-23-5                                                               Package_TO_SOT_SMD.pretty
+SOT-23-6                                                               Package_TO_SOT_SMD.pretty
+SW_Push_1P1T_XKB_TS-1187A                                              Button_Switch_SMD.pretty
+SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm                      Jumper.pretty
+TO-252-2                                                               Package_TO_SOT_SMD.pretty
+TestPoint_Loop_D2.50mm_Drill1.0mm                                      TestPoint.pretty
+TestPoint_Pad_D1.5mm                                                   TestPoint.pretty
+USB_C_Receptacle_HRO_TYPE-C-31-M-12                                    Connector_USB.pretty (modified, see tools/build_fplib.py)

@@ -1,0 +1,6 @@
+"Comment","Designator","Footprint","LCSC Part #"
+"100nF","C1","squashimoto:C_0603_1608Metric","C91183"
+"1uF","C2","squashimoto:C_0603_1608Metric","C5673"
+"GH-5, to controller J11","J1","squashimoto:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal","C189896"
+"100","R1","squashimoto:R_0603_1608Metric","C22775"
+"AS5600","U1","squashimoto:SOIC-8_3.9x4.9mm_P1.27mm","C55240803"
