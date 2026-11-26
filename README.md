@@ -1,8 +1,6 @@
 # Squashimoto
 
-A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub motors in Belize City. It roams town on its own, maps and films its route, delivers 3D prints from the shop, and can stand up and balance on either wheel pair for a ~1 m camera vantage.
-
-Built with support from Hack Club Fabricate, and as a Hack Club Fallen build (demo at Maker Faire Shenzhen, Dec 2026).
+A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub motors. It roams town on its own, maps and films its route, and can stand up and balance on either wheel pair for a ~1 m camera vantage.
 
 ## Layout
 
@@ -23,8 +21,4 @@ Built with support from Hack Club Fabricate, and as a Hack Club Fallen build (de
 
 ## Status
 
-V1 in progress. Controller PCB order deadline: Nov 10, 2026.
-
-## License
-
-All rights reserved for now (private). License to be chosen before going public.
+V1.1 in progress. 
