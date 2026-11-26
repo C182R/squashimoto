@@ -2,6 +2,8 @@
 
 A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub motors. It roams town on its own, maps and films its route, and can stand up and balance on either wheel pair for a ~1 m camera vantage.
 
+![Squashimoto assembly, isometric view](docs/images/squashimoto-isometric-view.png)
+
 ## Layout
 
 | Path | What lives there |
