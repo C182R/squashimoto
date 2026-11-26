@@ -17,6 +17,17 @@ I got my hands on a couple hoverboard motors and wanted to make the best use out
 - **Custom battery pack:** a new 10S1P pack built from Molicel P26A 18650 cells (36 V, 93.6 Wh) with a 30 A BMS. The stock hoverboard pack is only for bench testing.
 - **Manual control:** drive it with a DualSense Edge controller.
 
+## How to use it
+
+The firmware isn't finished yet, so this is how it will work once it is.
+
+1. **Power it on:** plug the charged battery pack into the controller board. The buzzer chirps once when the board starts up.
+2. **Release the e-stop:** the robot always starts in a stopped state, and nothing moves while the e-stop is pressed.
+3. **Connect the controller:** pair the DualSense Edge and arm the motors from it. If the controller disconnects or a motor board stops responding, the robot stops and has to be armed again.
+4. **Drive or survey:** drive it by hand with the controller, or start a survey run on the Raspberry Pi. On a survey run it plans its own route with the lidar and GPS and records with the camera as it goes.
+5. **Stand up for a higher view:** switch to balance mode so it stands up on one wheel pair and lifts the camera to about 1 m. Standing up needs the kickstand and its actuator, which aren't in the BOM yet: I left them out to save time, and the DRV8871 kickstand driver on the controller board is left unpopulated for now.
+6. **Stop:** press the e-stop at any time to cut the motors.
+
 ## Pictures
 
 | Side | Top |
