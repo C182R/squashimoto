@@ -52,18 +52,6 @@ Schematic: [`docs/images/encoder-schematic.pdf`](docs/images/encoder-schematic.p
 - **Rear pair:** GD32F103 hoverboard mainboard running [EFeru hoverboard-firmware-hack-FOC](https://github.com/EFeru/hoverboard-firmware-hack-FOC), controlled over USART at 115200 baud
 - **Front pair:** GD32E230 split boards running [RoboDurden Hoverboard-Firmware-Hack-Gen2.x-GD32](https://github.com/RoboDurden/Hoverboard-Firmware-Hack-Gen2.x-GD32), sharing one UART bus with a separate slave ID per board
 
-## Bill of materials
-
-The full BOM is [`bom/squashimoto-bom.csv`](bom/squashimoto-bom.csv). Parts I already have (salvaged or home stock) are listed at $0.
-
-| | Cost |
-|---|---|
-| Parts to buy | $910.57 |
-| Tools | $15.66 |
-| **Total** | **$926.23** |
-
-The biggest costs are sensing (lidar, camera, GPS), 3D-printing filament and the controller PCB fab and assembly.
-
 ## Repo layout
 
 | Path | What's there |
@@ -81,8 +69,6 @@ The biggest costs are sensing (lidar, camera, GPS), 3D-printing filament and the
 ## Status
 
 V1.1 in progress. The boards and CAD are designed. The firmware is waiting on parts: it can't be tested or tuned until the boards and hoverboard hardware are here.
-
-> TODO (you): what's done, what's next, and anything you'd change in V2.
 
 ## License
 
