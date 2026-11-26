@@ -4,23 +4,85 @@ A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub
 
 ![Squashimoto assembly, isometric view](docs/images/squashimoto-isometric-view.png)
 
-## Layout
+## Why I built this
 
-| Path | What lives there |
+> TODO (you): a few sentences on why you started this, what problem it solves for you, and what you want to learn from it.
+
+## What it does
+
+- **Drives itself:** a Raspberry Pi 3B+ plans the route using a 2D lidar (RPLIDAR C1) and GPS.
+- **Maps and films:** a Pi Camera Module 3 on a servo mount records the route.
+- **Stands up and balances:** the controller board's IMU runs a balance loop on either wheel pair, which lifts the camera to about 1 m.
+- **Runs on salvaged parts:** the hub motors, motor boards, battery pack and center tube all come from old hoverboards.
+- **Manual control:** drive it with a DualSense Edge controller.
+
+## Pictures
+
+| Side | Top |
 |---|---|
-| `bom/` | Bill of materials (`squashimoto-bom.csv`) |
-| `hardware/pcb/controller/` | Main controller board — KiCad (ESP32-WROOM-32E, ICM-42688-P IMU, TPS54360B buck from 36 V) |
-| `hardware/pcb/encoder/` | AS5600 steering encoder board — KiCad |
-| `cad/` | SolidWorks parts and assemblies, plus Bambu Studio `.3mf` print projects; `cad/exports/` for STEP / STL |
-| `firmware/controller/` | Balance loop and high-level control for the controller board |
+| ![Side view](docs/images/squashimoto-side-view.png) | ![Top view](docs/images/squashimoto-top-view.png) |
+
+## Electronics
+
+### Controller board (`hardware/pcb/controller/`)
+
+A 4-layer, 100 x 90 mm board that runs off the 10S hoverboard pack (30–42 V).
+
+![Controller board, top](docs/images/controller-3d-top.png)
+
+- **MCU:** ESP32-WROOM-32E, with USB-C (CH340C) for flashing
+- **IMU:** ICM-42688-P for the balance loop
+- **Power:** a TPS54360B buck converts the 36 V pack to 5 V at 3.5 A for the Pi, the lidar and the logic. There's also a 7 A fuse, reverse-polarity protection, a TVS diode and battery voltage sensing.
+- **Motor links:** three UART connectors to the hoverboard boards (one rear, two front)
+- **Other I/O:** a kickstand actuator driver (DRV8871), two servo headers, a lidar connector, an encoder connector, an e-stop loop, a battery NTC, a spare Qwiic port, a WS2812B status LED and a buzzer
+
+Schematic: [`docs/images/controller-schematic.pdf`](docs/images/controller-schematic.pdf)
+
+### Steering encoder board (`hardware/pcb/encoder/`)
+
+A small 2-layer AS5600 magnetic angle sensor board that reads the front swerve pivot angle. It connects to the controller over a 5-pin JST GH cable that carries I2C plus an analog output.
+
+![Encoder board, top](docs/images/encoder-3d-top.png)
+
+Schematic: [`docs/images/encoder-schematic.pdf`](docs/images/encoder-schematic.pdf)
+
+### Drive electronics
+
+- **Rear pair:** GD32F103 hoverboard mainboard running [EFeru hoverboard-firmware-hack-FOC](https://github.com/EFeru/hoverboard-firmware-hack-FOC), controlled over USART at 115200 baud
+- **Front pair:** GD32E230 split boards running [RoboDurden Hoverboard-Firmware-Hack-Gen2.x-GD32](https://github.com/RoboDurden/Hoverboard-Firmware-Hack-Gen2.x-GD32), sharing one UART bus with a separate slave ID per board
+
+## Bill of materials
+
+The full BOM is [`bom/squashimoto-bom.csv`](bom/squashimoto-bom.csv). Parts I already have (salvaged or home stock) are listed at $0.
+
+| | Cost |
+|---|---|
+| Parts to buy | $910.57 |
+| Tools | $15.66 |
+| **Total** | **$926.23** |
+
+The biggest costs are sensing (lidar, camera, GPS), 3D-printing filament and the controller PCB fab and assembly.
+
+## Repo layout
+
+| Path | What's there |
+|---|---|
+| `bom/` | Bill of materials |
+| `hardware/pcb/controller/` | Controller board: KiCad project and fab files (gerbers zip) |
+| `hardware/pcb/encoder/` | Encoder board: KiCad project and fab files |
+| `cad/` | SolidWorks parts and assemblies, plus Bambu Studio `.3mf` print projects |
+| `firmware/squashimotofirmware/` | Controller board firmware (work in progress) |
 | `firmware/hoverboard/` | Notes and config for the reflashed hoverboard boards |
+| `docs/images/` | Renders, schematics and CAD screenshots |
+| `docs/datasheets/` | Datasheets for the parts on the boards |
 | `docs/journal/` | Build journal |
-
-## Drive electronics
-
-- **Rear pair:** GD32F103 hoverboard mainboard running [EFeru hoverboard-firmware-hack-FOC](https://github.com/EFeru/hoverboard-firmware-hack-FOC) (USART control).
-- **Front pair:** GD32E230 split boards running [RoboDurden Hoverboard-Firmware-Hack-Gen2.x-GD32](https://github.com/RoboDurden/Hoverboard-Firmware-Hack-Gen2.x-GD32).
 
 ## Status
 
-V1.1 in progress. 
+V1.1 in progress. The boards and CAD are designed. The firmware is waiting on parts: it can't be tested or tuned until the boards and hoverboard hardware are here.
+
+> TODO (you): what's done, what's next, and anything you'd change in V2.
+
+## License
+
+Software (`firmware/`) is MIT. Hardware (`hardware/`, `cad/`, `bom/`, `docs/`) is CERN-OHL-S v2. See [LICENSE.md](LICENSE.md).
