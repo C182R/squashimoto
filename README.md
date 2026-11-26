@@ -60,6 +60,11 @@ A small 2-layer AS5600 magnetic angle sensor board that reads the front swerve p
 
 Schematic: [`docs/images/encoder-schematic.pdf`](docs/images/encoder-schematic.pdf)
 
+There are two versions of this board. `encoda` is the main one, and the renders and schematic above are from it. `encoda-j1-back` is an alternate layout with the same schematic and two differences:
+
+- **J1 is on the back:** the JST GH connector is on the bottom of the board, turned 180°, instead of on the top.
+- **R1 moved:** the 100 Ω resistor on the analog output moves 7 mm to the other side of the connector, and the traces are rerouted to match.
+
 ### Drive electronics
 
 - **Rear pair:** GD32F103 hoverboard mainboard running [EFeru hoverboard-firmware-hack-FOC](https://github.com/EFeru/hoverboard-firmware-hack-FOC), controlled over USART at 115200 baud
