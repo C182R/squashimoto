@@ -13,7 +13,8 @@ A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub
 - **Drives itself:** a Raspberry Pi 3B+ plans the route using a 2D lidar (RPLIDAR C1) and GPS.
 - **Maps and films:** a Pi Camera Module 3 on a servo mount records the route.
 - **Stands up and balances:** the controller board's IMU runs a balance loop on either wheel pair, which lifts the camera to about 1 m.
-- **Runs on salvaged parts:** the hub motors, motor boards, battery pack and center tube all come from old hoverboards.
+- **Runs on salvaged parts:** the hub motors, motor boards and center tube all come from old hoverboards.
+- **Custom battery pack:** a new 10S1P pack built from Molicel P26A 18650 cells (36 V, 93.6 Wh) with a 30 A BMS. The stock hoverboard pack is only for bench testing.
 - **Manual control:** drive it with a DualSense Edge controller.
 
 ## Pictures
@@ -26,7 +27,7 @@ A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub
 
 ### Controller board (`hardware/pcb/controller/`)
 
-A 4-layer, 100 x 90 mm board that runs off the 10S hoverboard pack (30–42 V).
+A 4-layer, 100 x 90 mm board that runs off the 10S battery pack (30–42 V).
 
 ![Controller board, top](docs/images/controller-3d-top.png)
 
