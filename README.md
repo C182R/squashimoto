@@ -28,6 +28,8 @@ The firmware isn't finished yet, so this is how it will work once it is.
 5. **Stand up for a higher view:** switch to balance mode so it stands up on one wheel pair and lifts the camera to about 1 m. Standing up needs the kickstand and its actuator, which aren't in the BOM yet: I left them out to save time, and the DRV8871 kickstand driver on the controller board is left unpopulated for now.
 6. **Stop:** press the e-stop at any time to cut the motors.
 
+The only optional functionality is the standing up, since the robot works perfectly fine without it.
+
 ## Pictures
 
 | Side | Top |
