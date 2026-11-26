@@ -6,7 +6,7 @@ A self-driving, self-balancing surveyor robot built from salvaged hoverboard hub
 
 ## Why I built this
 
-Hoverboards get thrown out all the time, so I built Squashimoto from salvaged hoverboard motors and boards to show that dead e-waste can become a useful robot instead of landfill. It surveys my town with a camera, GPS and lidar, and I'll combine what it records with public pothole and road-condition data to find the busiest roads, which ones need repairs first, and where an upgrade would be worth it. The whole design is open source and costs about $926 in new parts, a fraction of what a commercial survey robot costs, so anyone can build one for their own community.
+I got my hands on a couple hoverboard motors and wanted to make the best use out of them, since I've seen so many hoverboards get thrown in the trash with perfectly good components. I wanted to help improve the community, and mapping public spaces to safely collect public data like the amount of potholes in a road or streets that get flooded in the rain, so my town knows what to fix first. It'll never directly record people or private property.
 
 ## What it does
 
