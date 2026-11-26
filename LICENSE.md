@@ -40,5 +40,5 @@ As per CERN-OHL-S v2 section 4, should you produce hardware based on this source
 Files made by others keep their own licenses and are not covered by the licenses above. These include:
 
 - KiCad stock footprints in `hardware/pcb/lib/squashimoto.pretty/` (see `SOURCES.txt` there), under the KiCad library license (CC-BY-SA 4.0 with the KiCad design exception)
-- Vendor and library 3D models in `cad/` and `cad/exports/` (bearings, fasteners, servos, lidar, camera and similar bought parts)
+- Vendor and library 3D models in `cad/` and `cad/exports (STEP)/` (bearings, fasteners, servos, lidar, camera and similar bought parts)
 - Datasheets in `docs/datasheets/`

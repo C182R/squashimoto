@@ -78,6 +78,7 @@ There are two versions of this board. `encoda` is the main one, and the renders 
 | `hardware/pcb/controller/` | Controller board: KiCad project and fab files (gerbers zip) |
 | `hardware/pcb/encoder/` | Encoder board: KiCad project and fab files |
 | `cad/` | SolidWorks parts and assemblies, plus Bambu Studio `.3mf` print projects |
+| `cad/exports (STEP)/` | STEP exports of the parts and assemblies, for opening in any CAD program |
 | `firmware/squashimotofirmware/` | Controller board firmware (work in progress) |
 | `firmware/hoverboard/` | Notes and config for the reflashed hoverboard boards |
 | `docs/images/` | Renders, schematics and CAD screenshots |
